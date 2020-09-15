@@ -51,3 +51,16 @@ const addVideoStream = (video, stream) => {
   });
   videoGrid.append(video);
 };
+let msg = $("input");
+console.log(msg);
+
+// input value
+let text = $("input");
+// when press enter send message
+$("html").keydown((e) => {
+  if (e.which == 13 && text.val().length !== 0) {
+    console.log(text.val());
+    socket.emit("message", text.val());
+    text.val("");
+  }
+});
