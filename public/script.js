@@ -14,7 +14,7 @@ let myVideoStream;
 navigator.mediaDevices
   .getUserMedia({
     video: true,
-    audio: true,
+    audio: false,
   })
   .then((stream) => {
     myVideoStream = stream;
@@ -64,3 +64,8 @@ $("html").keydown((e) => {
     text.val("");
   }
 });
+
+socket.on("createMessage", message => {
+  $("ul").append(`<li class="message"><b>user</b><br/>${message}</li>`);
+
+})
