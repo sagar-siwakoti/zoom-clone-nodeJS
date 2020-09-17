@@ -89,17 +89,7 @@ const muteUnmute = () => {
   }
 }
 
-const playStop = () => {
-  console.log('object')
-  let enabled = myVideoStream.getVideoTracks()[0].enabled;
-  if (enabled) {
-    myVideoStream.getVideoTracks()[0].enabled = false;
-    setPlayVideo()
-  } else {
-    setStopVideo()
-    myVideoStream.getVideoTracks()[0].enabled = true;
-  }
-}
+
 
 const setMuteButton = () => {
   const html = `
@@ -116,6 +106,19 @@ const setUnmuteButton = () => {
   `
   document.querySelector('.main__mute_button').innerHTML = html;
 }
+//video part
+const playStop = () => {
+  console.log('object')
+  let enabled = myVideoStream.getVideoTracks()[0].enabled;
+  if (enabled) {
+    myVideoStream.getVideoTracks()[0].enabled = false;
+    setPlayVideo()
+  } else {
+    setStopVideo()
+    myVideoStream.getVideoTracks()[0].enabled = true;
+  }
+}
+
 
 const setStopVideo = () => {
   const html = `
