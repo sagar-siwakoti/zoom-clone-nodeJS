@@ -10,6 +10,7 @@ const peer = new Peer(undefined, {
   host: "/",
   port: "443",
 });
+//initializing video and audio
 let myVideoStream;
 navigator.mediaDevices
   .getUserMedia({
@@ -43,7 +44,7 @@ const connectToNewUser = (userId, stream) => {
     addVideoStream(video, userVideoStream);
   });
 };
-
+//add stream video
 const addVideoStream = (video, stream) => {
   video.srcObject = stream;
   video.addEventListener("loadedmetadata", () => {
