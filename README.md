@@ -6,3 +6,10 @@
   <img src="https://img.shields.io/badge/Framework-Express_JS-61dbfb.svg" />
   <img src="https://img.shields.io/badge/Language-JavaScript-f0db4f.svg" /> <br/> <br/> <br/>
 </p>
+<p>Checkout the clone<b><u><a href="https://salty-wildwood-09920.herokuapp.com/">HERE</a></u</b></p><br/>
+    <h3>Technology used:</h3><br/>
+    <ul>
+        <li><img src="https://img.shields.io/badge/Socket.io-brightgreen.svg" /></li>
+        <li><img src="https://img.shields.io/badge/PeerJS-green.svg" /></li>
+        <li><img src="https://img.shields.io/badge/WebRTC-0078d7.svg" /></li>
+        <li><img src="https://img.shields.io/badge/EJS-f0db4f.svg" /></li>
