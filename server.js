@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.redirect(`/${uuidv4()}`);
 });
-
+//setting the rooms wuth UUID
 app.get("/:room", (req, res) => {
   res.render("room", { roomId: req.params.room });
 });
